@@ -24,8 +24,8 @@
 		<xml-path.version>5.5.6</xml-path.version>
 		<poi.version>5.4.1</poi.version>
 		<cucumber-java.version>7.30.0</cucumber-java.version>
-		<suiteXmlFile-TestNG>${user.dir}\Naukari\testng.xml</suiteXmlFile-TestNG>
-         <!--   <suiteXmlFile-TestNG>${user.dir}\testng.xml</suiteXmlFile-TestNG>  -->
+	 <!--	<suiteXmlFile-TestNG>${user.dir}\Naukari\testng.xml</suiteXmlFile-TestNG>  -->
+         <suiteXmlFile-TestNG>${user.dir}\testng.xml</suiteXmlFile-TestNG>
          <!--   <suiteXmlFile-TestNG>${user.dir}\testng.xml</suiteXmlFile-TestNG>  -->
 	</properties>
 
