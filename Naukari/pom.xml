@@ -26,6 +26,7 @@
 		<cucumber-java.version>7.30.0</cucumber-java.version>
 		<suiteXmlFile-TestNG>${user.dir}\Naukari\testng.xml</suiteXmlFile-TestNG>
          <!--   <suiteXmlFile-TestNG>${user.dir}\testng.xml</suiteXmlFile-TestNG>  -->
+         <!--   <suiteXmlFile-TestNG>${user.dir}\testng.xml</suiteXmlFile-TestNG>  -->
 	</properties>
 
 
