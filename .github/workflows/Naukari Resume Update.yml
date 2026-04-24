@@ -1,0 +1,23 @@
+name: Naukari Resume Update
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # daily at 9 AM IST (we’ll adjust below)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build & Run
+        run: mvn clean test
