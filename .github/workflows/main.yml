@@ -28,3 +28,4 @@ jobs:
 
       - name: Build & Run
         run: mvn clean test
+        working-directory: Naukari
