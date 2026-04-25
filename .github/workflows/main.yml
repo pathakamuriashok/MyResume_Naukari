@@ -1,0 +1,30 @@
+name: Naukari Resume Update_QA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List files (root)
+        run: dir
+
+      - name: List all folders recursively
+        run: dir /s
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build & Run
+        run: mvn clean test
