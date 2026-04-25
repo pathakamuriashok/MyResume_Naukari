@@ -1,0 +1,24 @@
+name: Naukari Resume Update
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4(https://github.com)
+
+      - name: Setup Java
+        uses: actions/setup-java@v4(https://github.com/actions/setup-java)
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build & Run
+        run: mvn clean test
+        working-directory: MyResume_Naukari/Naukari
